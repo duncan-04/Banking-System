@@ -18,9 +18,9 @@ public class AccountTransactionController {
         this.transactionDAO = new TransactionDAO();
     }
 
-    // ==========================================
+    
     // GET TRANSACTION HISTORY
-    // ==========================================
+    
 
     public List<Transaction> getTransactionHistory() {
 
@@ -45,9 +45,9 @@ public class AccountTransactionController {
     }
 
 
-    // ==========================================
+    
     // GET MOST RECENT TRANSACTIONS FIRST
-    // ==========================================
+    
 
     public List<Transaction> getRecentFirst() {
 
@@ -60,9 +60,9 @@ public class AccountTransactionController {
     }
 
 
-    // ==========================================
+    
     // GET LIMITED TRANSACTION HISTORY
-    // ==========================================
+    
 
     public List<Transaction> getRecentFirst(int limit) {
 
@@ -78,9 +78,9 @@ public class AccountTransactionController {
     }
 
 
-    // ==========================================
+    
     // FIND INDIVIDUAL TRANSACTION
-    // ==========================================
+    
 
     public Transaction getTransactionDetails(int transactionId) {
 
