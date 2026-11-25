@@ -18,9 +18,9 @@ public class AccountController {
         this.bank = bank;
     }
 
-    // ==========================================
+    
     // SESSION MANAGEMENT
-    // ==========================================
+    
 
     public void startSession(Customer customer) {
         this.customer = customer;
@@ -51,9 +51,9 @@ public class AccountController {
     }
 
 
-    // ==========================================
+    
     // ACTIVE ACCOUNT
-    // ==========================================
+    
 
     public void setActiveAccount(Account account) {
 
@@ -84,9 +84,9 @@ public class AccountController {
     }
 
 
-    // ==========================================
+    
     // DEPOSIT
-    // ==========================================
+    
 
     public OperationResult deposit(String amountText) {
 
@@ -154,9 +154,9 @@ public class AccountController {
     }
 
 
-    // ==========================================
+    
     // WITHDRAWAL
-    // ==========================================
+    
 
     public OperationResult withdraw(String amountText) {
 
@@ -224,9 +224,9 @@ public class AccountController {
     }
 
 
-    // ==========================================
+    
     // OPENING NEW ACCOUNTS
-    // ==========================================
+    
 
     public OperationResult openAccount(
             AccountType type,
@@ -281,9 +281,9 @@ public class AccountController {
     }
 
 
-    // ==========================================
+    
     // MONTHLY INTEREST
-    // ==========================================
+    
 
     public OperationResult applyMonthlyInterest() {
 
@@ -369,9 +369,9 @@ public class AccountController {
     }
 
 
-    // ==========================================
+    
     // AMOUNT VALIDATION
-    // ==========================================
+    
 
     private double parseAmount(String text)
             throws BankingException {
