@@ -12,7 +12,7 @@ public class Main extends Application {
 
         // Core model (in memory until the database step)
         Bank bank = new Bank("Botswana Digital Bank", "Main Branch");
-        // bank.seedDemoData();
+        //bank.seedDemoData();
 
         // Controllers sit between the views and the model
         LoginController loginController = new LoginController(bank);
@@ -30,9 +30,9 @@ public class Main extends Application {
         // the Navigator swaps its root
         Scene scene = new Scene(new StackPane(), 1100, 740);
 
-        // ==========================================
+        
         // LOAD EXTERNAL CSS STYLESHEET
-        // ==========================================
+        
 
         try {
 
@@ -54,19 +54,19 @@ public class Main extends Application {
 
             } else {
 
-                System.err.println("ERROR: CSS FILE NOT FOUND!");
-                System.err.println("Expected location: " + cssPath);
+                System.out.println("ERROR: CSS FILE NOT FOUND!");
+                System.out.println("Expected location: " + cssPath);
             }
 
         } catch (Exception e) {
 
-            System.err.println("CSS LOADING ERROR!");
+            System.out.println("CSS LOADING ERROR!");
             e.printStackTrace();
         }
 
-        // ==========================================
+        
         // APPLICATION NAVIGATION
-        // ==========================================
+        
 
         Navigator navigator = new Navigator(
                 stage,
