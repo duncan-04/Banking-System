@@ -24,9 +24,9 @@ public class Bank {
     private final AccountDAO accountDAO = new AccountDAO();
 
 
-    // ==========================================
+    
     // CONSTRUCTOR
-    // ==========================================
+    
 
     public Bank(String bankName, String branchName) {
         this.bankName = bankName;
@@ -42,9 +42,9 @@ public class Bank {
     }
 
 
-    // ==========================================
+    
     // CUSTOMER REGISTRATION
-    // ==========================================
+    
 
     public Customer registerCustomer(
             String firstname,
@@ -120,9 +120,9 @@ public class Bank {
     }
 
 
-    // ==========================================
+    
     // FIND CUSTOMER AND LOAD THEIR ACCOUNTS
-    // ==========================================
+    
 
     public Customer findCustomer(String customerId) {
 
@@ -176,9 +176,9 @@ public class Bank {
     }
 
 
-    // ==========================================
+    
     // OPEN SAVINGS OR INVESTMENT ACCOUNT
-    // ==========================================
+    
 
     public Account openAccount(
             Customer customer,
@@ -196,9 +196,9 @@ public class Bank {
     }
 
 
-    // ==========================================
+    
     // OPEN ANY ACCOUNT TYPE
-    // ==========================================
+    
 
     public Account openAccount(
             Customer customer,
@@ -304,9 +304,9 @@ public class Bank {
     }
 
 
-    // ==========================================
+    
     // FIND ACCOUNT
-    // ==========================================
+    
 
     public Account findAccount(String accountNumber) {
 
@@ -339,18 +339,18 @@ public class Bank {
     }
 
 
-    // ==========================================
+    
     // GET ALL ACCOUNTS
-    // ==========================================
+    
 
     public List<Account> getAllAccounts() {
         return new ArrayList<>(accounts.values());
     }
 
 
-    // ==========================================
+    
     // DEMO DATA
-    // ==========================================
+    
 
     public void seedDemoData() {
 
@@ -413,9 +413,9 @@ public class Bank {
     }
 
 
-    // ==========================================
+    
     // VALIDATION
-    // ==========================================
+    
 
     private static boolean isBlank(String value) {
         return value == null || value.isBlank();
